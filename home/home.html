@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar color=blue2>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+    <ion-buttons right>
+      <button ion-button (click)="goToSearch()">
+        <ion-icon id='search-icon' name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <p class="center">
+      Recommended For You</p>
+  </div>
+  <h1>
+    Technology
+  </h1>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/Ellipse 3.png">
+      </ion-avatar>
+      <h2>Bob's coding Program</h2>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/Ellipse 10.png">
+      </ion-avatar>
+      <h2>Chris Summer Coding Program</h2>
+    </ion-item>
+
+    <h1>
+      College
+    </h1>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/usc.png">
+      </ion-avatar>
+      <h3>USC Summer Camp</h3>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/Ellipse 11.png">
+      </ion-avatar>
+      <h2>UCLA Summer Program</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>
