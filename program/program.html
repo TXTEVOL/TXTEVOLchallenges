@@ -7,59 +7,112 @@
 <ion-header>
 
   <ion-navbar color=blue2>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title id="searchTitle">Search</ion-title>
+
 
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-<ion-title>Program</ion-title>
-  
-  <h1>Program Info</h1>
- 
-<ion-item>
+<ion-content>
+
+  <!-- <ion-item>
     <ion-avatar item-start>
       <img src="../../assets/img/Basketball-Court.jpg">
     </ion-avatar>
-    <h3>IMG Academy 2017</h3>
-  </ion-item>
+    <h3>IMG Academy 2017
+      Basketball Camp
+    </h3>
+  </ion-item> -->
+
+  <div class="banner">
+    <img src="../../assets/img/Basketball-Court.jpg">
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        Location:
+      </ion-col>
+      <ion-col col-8>
+        5650 Bollettieri Blvd. Bradenton, FL 34210
+      </ion-col>
+
+<ion-col col-4>
+         Email:
+      </ion-col>
+      <ion-col col-8>
+       info@imgacademy.com 
+      </ion-col>
+
+<ion-col col-4>
+        Contact: 
+      </ion-col>
+      <ion-col col-8>
+       1-800-872-6425
+      </ion-col>
+
+<ion-col col-4>
+        Description:
+      </ion-col>
+      <ion-col col-8>
+               We help you evolve your game.Work With elite coaches in a world class enviormnt. REGISTER NOW
+      </ion-col>
 
 
 
-<h1>Location:</h1>
- 
-
-<p>5650 Bolleteri Blvd.
-Bradenton, FL 34210
- </p> 
-
- <h2>Email:</h2> 
-  
-  <p>info@imgacademy.com</p>
-
-<h3>Contact:</h3> 
-
-<p>1-800-872-6425</p>
-
-<h4>Description:</h4> 
-  
-  <p>We help you evolve your
-  game.Work With elite coaches in a world class enviormnt.
-  REGISTER NOW!</p>
 
 
- 
+    </ion-row>
+  </ion-grid>
+  <div class="body">
+    <div class="programTitle">
+      IMG Academy 2017 Basketball Camp
+    </div>
+    <div class="blueBorder">
+    </div>
+    <div class="programInfo">
+      <div class="infoTitle">
+        Location:
+      </div>
+      <div class="infoDescription">
+        5650 Bollettieri Blvd. Bradenton, FL 34210
+      </div>
+    </div>
+    <div class="programInfo">
+      <div class="infoTitle">
+        Email:
+      </div>
+      <div class="infoDescription">
+        info@imgacademy.com
+      </div>
+    </div>
+    <div class="programInfo">
+      <div class="infoTitle">
+        Contact:
+      </div>
+      <div class="infoDescription">
+        1-800-872-6425
+      </div>
+    </div>
+    <div class="programInfo2">
+      <div class="infoTitle">
+        Description:
+      </div>
+      <div class="infoDescription">
+        We help you evolve your game.Work With elite coaches in a world class enviormnt. REGISTER NOW
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+
+  </div>
+
+
 
 </ion-content>
 
 
 <ion-nav #mycontent [root]="rootPage"></ion-nav>
-
-
-
-

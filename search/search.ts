@@ -27,6 +27,7 @@ initializeItems() {
     this.items = [
       'Basketball Camps- IMG Academy 2017',
       'Nike Basketball Camps- NIKE Sports Camps',
+      'Duke Basketball Camp',
     ];
   }
   

@@ -18,7 +18,39 @@ ion-card-header{
     color:#1FBEBD;  
 
 }
+    .collegeimage{
+        border-radius: 50px;
+    }
 
+    .codeimage{
+        border-radius: 50px;
+    }
 }
 
+
+
+ion-card-title{
+
+  background-color:#E9E2E2;   
+}
+.programImage{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+.programName{
+    display: inline-block;
+    padding-left: 20px;
+}
+.program{
+    background-color: #E9E2E2;
+}
+.box{
+    margin-bottom: 30px;
+}
+
+.toolbar-background-md {
+    background-color: #13A5A4;
+    color: white;
+}
 

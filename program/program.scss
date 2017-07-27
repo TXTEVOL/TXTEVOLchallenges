@@ -16,6 +16,47 @@ h4{
 
         color:#1FBEBD;
        }
-
+.banner{
+        width: 100%;
+}
+.programTitle{
+        font-size: 24px;
+        padding-bottom: 5px;
+        text-align: center;
+}
+.blueBorder{
+        border-bottom: solid 1px #1FBEBD;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 20px;
+}
+.programInfo{
+        border-bottom: solid 1px #1FBEBD;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+}
+.programInfo2{
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+}
+.infoTitle{
+        display: inline-block;
+        color: #1FBEBD;
+        font-size: 20px;
+}
+.infoDescription{
+        display: inline-block;
+        max-width: 60%;
+        float: right;
+}
+.footer{
+        height: 15px;
+        background-color: #1FBEBD;
+        margin-top: 50px;
+}
 }
 
