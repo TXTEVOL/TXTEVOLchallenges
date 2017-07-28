@@ -21,10 +21,12 @@
 <ion-content padding>
 
 
-  <ion-searchbar class="search" (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-searchbar  class="search" (ionInput)="getItems($event)"></ion-searchbar>
   <ion-list>
+   
     <ion-item *ngFor="let item of items" (click)="goToProgram()">
-      {{ item }}
+      <img src="assets/img/{{item}}.png"> {{ item }}    
+      
     </ion-item>
     <!--<div class="listHolder">
 

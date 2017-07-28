@@ -18,6 +18,7 @@ export class HomePage {
 searchQuery: string = '';
   items: string[];
  
+  images: string[];
   
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   this.initializeItems();
@@ -30,9 +31,24 @@ initializeItems() {
       'Sport',
       'Music',
       'Camp',
-    ];
-  }
+    ]; this.images = [
+     'assets/img/Eclipse3.png',
+     'assets/img/Art.png',
+     'assets/img/Sports.png',
+     'assets/img/Music.png',
+     'assets/img/Camp.png',
+    ]
+  } 
   
+ 
+
+
+
+
+
+
+
+
   getItems(ev:any) {
     // Reset items back to all of the items
     this.initializeItems();

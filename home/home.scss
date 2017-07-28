@@ -3,15 +3,10 @@ page-search {
     background-color:#1FBEBD;
 
  }
-.searchbar-md .searchbar-input{
-    background-color: #E9E2E2;
-    height: 23px;
-    font-size:px
 
-
-}
+$searchbar-md-background-color:blue;
 .searchbar-md .searchbar-search-icon{
     top: 0;
     margin-left: -10px;
-    margin-top: 2px;
+    margin-top: 10px;
 }
