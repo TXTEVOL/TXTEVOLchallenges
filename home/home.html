@@ -7,11 +7,10 @@
 <ion-header>
 
   <ion-navbar color=blue2>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title id="searchTitle">Home</ion-title>
 
+
+    <ion-title id="searchTitle">Home</ion-title>
+    <img src="assets/img/star button.png" class="star" (click)="goToFavorite()" />
   </ion-navbar>
 
 </ion-header>
@@ -20,25 +19,27 @@
 
 <ion-content padding>
 
-
-  <ion-searchbar  placeholder="search for programs"  class="search" (ionInput)="getItems($event)"></ion-searchbar>
-  <ion-list>
-    <ion-item class="item"  *ngFor="let item of items" (click)="goToProgram()">
-    <img src="assets/img/{{item}}.png"> <p> {{ item }} </p>  <img  src="assets/img/Arrow from home .png" class="Arrow"> 
+  <ion-searchbar [(ngModel)]="searchQuery" placeholder="search for programs" class="search" (ionInput)="setFilteredItems()"> </ion-searchbar>
+  <ion-list *ngIf="searchQuery">
+    <ion-item *ngFor="let item of items" (click)="viewItem(item)">
+      {{ item.title }}
     </ion-item>
-    <!--<div class="listHolder">
-
-
-
-
-
-
-
-
-      <h3 class="itemName"></h3>-->
-
-
   </ion-list>
+
+  <ion-list *ngIf="!searchQuery">
+    <ion-item *ngFor="let category of categories" (click)="goToCatagory()">
+      <img src="assets/img/{{category}}.png" />
+      <p> {{ category }} </p>
+      <img src="assets/img/Arrow from home .png" class="Arrow" />
+    </ion-item>
+  </ion-list>
+
+  <!-- <ion-list>
+    <ion-item class="item" *ngFor="let item of items" (click)="goToCatagory()">
+      <p> {{ item }} </p>
+      <img src="assets/img/Arrow from home .png" class="Arrow" /> 
+    </ion-item>
+  </ion-list> -->
 
 
 </ion-content>

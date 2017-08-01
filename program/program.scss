@@ -1,62 +1,87 @@
-page-program {
+
+.blue
+{color:#1FBEBD 
+
+}
+
+
+
+.green{
+color:#1FBEBD        
+}
+
+
+
+.brown{
+color:#1FBEBD
+}
+
+
+
+.white{
+color:#1FBEBD
+}
+
+.banner{
+width: 100%;
+height: 70%;
+}
 
 h1{
+text-align: center;
+color:#1FBEBD
+}
 
-        color:#1FBEBD;
-       }
-h2{
+h1{
+border-bottom:1px solid#1FBEBD;
 
-        color:#1FBEBD;
-       }
-h3{
+}
 
-        color:#1FBEBD;
-       }
-h4{
 
-        color:#1FBEBD;
-       }
-.banner{
-        width: 100%;
+
+.blue
+{
+border-bottom:1px solid#1FBEBD;
 }
-.programTitle{
-        font-size: 24px;
-        padding-bottom: 5px;
-        text-align: center;
+
+.red
+{
+border-bottom:1px solid#1FBEBD;
 }
-.blueBorder{
-        border-bottom: solid 1px #1FBEBD;
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-bottom: 20px;
+
+.green
+{
+border-bottom:1px solid#1FBEBD;
 }
-.programInfo{
-        border-bottom: solid 1px #1FBEBD;
-        padding-bottom: 10px;
-        margin-top: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
+
+.yellow
+{
+border-bottom:1px solid#1FBEBD;
 }
-.programInfo2{
-        padding-bottom: 10px;
-        margin-top: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
+
+.brown
+{
+border-bottom:1px solid#1FBEBD;
 }
-.infoTitle{
-        display: inline-block;
-        color: #1FBEBD;
-        font-size: 20px;
+
+.black
+{
+border-bottom:1px solid#1FBEBD;
 }
-.infoDescription{
-        display: inline-block;
-        max-width: 60%;
-        float: right;
+
+.white
+{
+border-bottom:1px solid#1FBEBD;
 }
-.footer{
-        height: 15px;
-        background-color: #1FBEBD;
-        margin-top: 50px;
+
+.grey
+{
+border-bottom:1px solid#1FBEBD;
 }
+
+.white-star-outline{
+
+float:right;
+
 }
 

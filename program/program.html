@@ -6,8 +6,9 @@
 -->
 <ion-header>
 
-  <ion-navbar color=blue2>
-
+  <ion-navbar color=blue2  >
+ <!-- <img src="../../assets/img/white Star.png" class="white star outline"> -->
+ <img src={{src1}} (click)= "switch1()" style= "float:right">
 
   </ion-navbar>
 
@@ -15,47 +16,54 @@
 
 
 <ion-content>
+ 
 
-  <!-- <ion-item>
-    <ion-avatar item-start>
-      <img src="../../assets/img/Basketball-Court.jpg">
-    </ion-avatar>
-    <h3>IMG Academy 2017
-      Basketball Camp
-    </h3>
-  </ion-item> -->
 
-  <div class="banner">
-    <img src="../../assets/img/Basketball-Court.jpg">
+  
+  
+
+    
+<!-- <img src= "assets/images/group.png" style= "width: 80px;" id="button1"> -->
+   <!-- <img src={{src2}} (click)= "switch2()" style= "width: 80px;" id="button2"> -->
+
+
+
+  
+
+  <div>
+    <img src="assets/img/Basketball-Court.jpg" class="banner">
   </div>
+
+<h1>IMG Academy 2017
+      Basketball Camp</h1>
 
   <ion-grid>
     <ion-row>
-      <ion-col col-4>
+      <ion-col div class="blue" col-4>
         Location:
       </ion-col>
-      <ion-col col-8>
+      <ion-col div class="red" col-8>
         5650 Bollettieri Blvd. Bradenton, FL 34210
       </ion-col>
 
-<ion-col col-4>
-         Email:
+<ion-col div class="green" col-4>
+       Website:
       </ion-col>
-      <ion-col col-8>
-       info@imgacademy.com 
+      <ion-col div class="yellow" col-8>
+       https://www.imgacadamy.com
       </ion-col>
 
-<ion-col col-4>
+<ion-col div class="brown" col-4>
         Contact: 
       </ion-col>
-      <ion-col col-8>
+      <ion-col div class="black"col-8>
        1-800-872-6425
       </ion-col>
 
-<ion-col col-4>
+<ion-col div class="white" col-4>
         Description:
       </ion-col>
-      <ion-col col-8>
+      <ion-col div class="grey" col-8>
                We help you evolve your game.Work With elite coaches in a world class enviormnt. REGISTER NOW
       </ion-col>
 
@@ -63,56 +71,10 @@
 
 
 
-    </ion-row>
-  </ion-grid>
-  <div class="body">
-    <div class="programTitle">
-      IMG Academy 2017 Basketball Camp
-    </div>
-    <div class="blueBorder">
-    </div>
-    <div class="programInfo">
-      <div class="infoTitle">
-        Location:
-      </div>
-      <div class="infoDescription">
-        5650 Bollettieri Blvd. Bradenton, FL 34210
-      </div>
-    </div>
-    <div class="programInfo">
-      <div class="infoTitle">
-        Email:
-      </div>
-      <div class="infoDescription">
-        info@imgacademy.com
-      </div>
-    </div>
-    <div class="programInfo">
-      <div class="infoTitle">
-        Contact:
-      </div>
-      <div class="infoDescription">
-        1-800-872-6425
-      </div>
-    </div>
-    <div class="programInfo2">
-      <div class="infoTitle">
-        Description:
-      </div>
-      <div class="infoDescription">
-        We help you evolve your game.Work With elite coaches in a world class enviormnt. REGISTER NOW
-      </div>
-    </div>
-  </div>
-
-
-  <div class="footer">
-
-  </div>
+  
 
 
 
-</ion-content>
 
 
 <ion-nav #mycontent [root]="rootPage"></ion-nav>
