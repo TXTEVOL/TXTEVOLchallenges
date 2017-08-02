@@ -23,7 +23,7 @@ export class HomePage {
   searchQuery: string = '';
 
 
-  categories: string[];
+  
   items: any;
 
 
@@ -33,17 +33,15 @@ export class HomePage {
   }
   images: string[];
 
-  initializeItems() {
-    this.categories = [
-      'Tech',
-      'Art',
-      'Sports',
-      'Music',
-      'Camp',];
-    this.items = this.localData.db.map(obj => {return obj.title})
 
-    console.log(this.items)
-  }
+initializeItems() {
+   this.categories = this.localData.categories;
+   this.items = this.localData.db.map(obj => {return obj.title})
+ 
+   console.log(this.items)
+ }
+  
+  
 
   getItems(ev: any) {
     // Reset items back to all of the items
@@ -64,7 +62,9 @@ export class HomePage {
     console.log('ionViewDidLoad SearchPage');
   }
   goToCatagory() {
-    this.navCtrl.push(CatagoryPage);
+    this.navCtrl.push(CatagoryPage,{
+     category: category,
+   });;
   }
 
 

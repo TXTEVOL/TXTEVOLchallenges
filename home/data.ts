@@ -3,6 +3,17 @@ export class dataProvider {
 
     }
 
+    categories = [
+        "technology",
+        "college",
+        "art",
+        "video games",
+        "fashion",
+        "math",
+        "educational",
+        "sports"
+    ];
+
     public db = [
         {
             "title": "TXT",
@@ -11,6 +22,9 @@ export class dataProvider {
                 "technology",
                 "educational"
             ],
+            "location": "3655 S Grand Ave #220, Los Angeles, CA 90007",
+            "website": "http://exploringtech.org",
+            "contact": "n/a",
             "favorite": false
         },
         {
@@ -20,6 +34,9 @@ export class dataProvider {
                 "educational",
                 "art"
             ],
+            "location": "2830 S Central Ave, Los Angeles, CA 90011",
+            "website": "https://apch.org",
+            "contact": "(323) 232-7653",
             "favorite": false
         },
         {
@@ -28,6 +45,9 @@ export class dataProvider {
             "category": [
                 "fashion"
             ],
+            "location": "4556 University Way NE Suite 200 Seattle, WA 98105",
+            "website": "https://fashion.experienceamerica.com",
+            "contact": "1-800-410-6088",
             "favorite": false
         },
         {
@@ -38,6 +58,9 @@ export class dataProvider {
                 "college",
                 "art"
             ],
+            "location": "9045 Lincoln Blvd Los Angeles, California 90045",
+            "website": "https://www.otis.edu/summer-art",
+            "contact": "(310) 665–6800",
             "favorite": false
         },
         {
@@ -46,6 +69,9 @@ export class dataProvider {
             "category": [
                 "educational"
             ],
+            "location": "n/a",
+            "website": "https://www.summer.ucla.edu/institutes/ModelUN",
+            "contact": "n/a",
             "favorite": false
         },
         {
@@ -54,9 +80,21 @@ export class dataProvider {
             "category": [
                 "educational"
             ],
+            "location": "n/a",
+            "website": "https://www.teenlife.com/summer-program/camp-expo/",
+            "contact": "n/a",
             "favorite": false
         }
     ]
+
+    getCategoryPrograms(category) {
+        return this.db.filter(program => {
+            return program.category.find(cat => {
+                return cat === category;
+            });
+        })
+    }
+
     async filterItems(searchTerm) {
         await this.db;
         return this.db.filter((program) => {

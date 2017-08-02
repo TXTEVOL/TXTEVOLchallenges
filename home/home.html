@@ -27,7 +27,7 @@
   </ion-list>
 
   <ion-list *ngIf="!searchQuery">
-    <ion-item *ngFor="let category of categories" (click)="goToCatagory()">
+    <ion-item *ngFor="let category of categories" (click)=“goToCatagory(category)”>
       <img src="assets/img/{{category}}.png" />
       <p> {{ category }} </p>
       <img src="assets/img/Arrow from home .png" class="Arrow" />
